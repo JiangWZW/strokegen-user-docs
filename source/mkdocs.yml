@@ -30,7 +30,8 @@ theme:
       accent: lime
 
 plugins:
-  - social
+  - social:
+      enabled: !ENV CI
 
 markdown_extensions:
   - pymdownx.highlight:
