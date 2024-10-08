@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../Quick%20Setup/">
       
       
       
@@ -43,6 +43,8 @@
         <style>:root{--md-text-font:"Montserrat";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -199,6 +201,23 @@
         
   
   
+  
+    <li class="md-tabs__item">
+      <a href="../Quick%20Setup/" class="md-tabs__link">
+        
+  
+    
+  
+  Quick Setup
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
     
   
   
@@ -268,6 +287,26 @@
   
   <span class="md-ellipsis">
     Welcome to StrokeGen Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Quick%20Setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick Setup
   </span>
   
 
@@ -364,14 +403,23 @@
 <h2 id="prepare-your-mesh">Prepare your mesh</h2>
 <p>Like any other rendering algorithm, the performance of StrokeGen depends on the quality of your mesh. 
 </br>To ensure the best performance, it is suggested to: </p>
-<ul>
-<li><strong>Retopology you model if it's messy</strong> 
-  </br>If you ever did modeling, you know what I mean by that - proper flows of quad loops, uniform vertex valency, adaptive density of quads, etc. </li>
-<li><strong>Triangulate your mesh(s)</strong> 
-  </br>For example, a triangulation modifier is required for a quad mesh / after a subdivision modifier. </li>
-<li><strong>Avoid thin shells</strong> 
-  </br>For example, an old outline trick is to apply a solidify modifier and slightly extrude the surface into a shell of two layers. This causes StrokeGen to render lines for both layers, resulting in unpleasant results. </li>
-</ul>
+<details class="note large annotate">
+<summary>Cleanup messy topology</summary>
+<p>At least, fix all non-manifold geometry (1) and keep a meaningful poly-density for your quads/triangles. 
+</br></br>It would be better if the mesh has been carefully modeled or re-topologized. 
+</br>For 3D modeling people, you know what I mean - quad flows, vertex valency, density of quads, etc. </p>
+</details>
+<ol>
+<li>Non-manifold geo mainly appears in scanned or brutally simplified meshes. In Blender, enter edit mode, "<em>select &gt; select All by trait &gt; Non Manifold</em>" to view them, </li>
+</ol>
+<details class="note large">
+<summary>Triangulate your mesh(s)</summary>
+<p>For example, a triangulation modifier is required for a quad mesh / after a subdivision modifier. </p>
+</details>
+<details class="note large">
+<summary>Avoid thin shells</summary>
+<p>For example, an old outline trick is to apply a solidify modifier and slightly extrude the surface into a shell of two layers. This causes StrokeGen to render lines for both layers, resulting in unpleasant results. </p>
+</details>
 
 
 
