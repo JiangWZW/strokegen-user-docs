@@ -46,6 +46,11 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.mark
   - attr_list
+  - md_in_html
+  - pymdownx.superfences
+
+extra_css:
+  - stylesheets/extra.css
 
 copyright: |
   &copy; 2024 <a href="https://github.com/JiangWZW"  target="_blank" rel="noopener">Made with ❤️ by Wangziwei Jiang</a>
