@@ -2,3 +2,16 @@
 .md-typeset details.large {
   font-size: 17px
 }
+
+@media (max-width: 1024px) {
+  .md-button--stretch {
+    width: 100%;
+    line-height: 50%;
+  }
+}
+
+
+.md-typeset compact {
+    max-height: 5rem;
+    line-height: 50%;
+}

@@ -17,4 +17,16 @@ Like any other rendering algorithm, the performance of StrokeGen depends on the 
 ??? note  large "Avoid thin shells"
     For example, an old outline trick is to apply a solidify modifier and slightly extrude the surface into a shell of two layers. This causes StrokeGen to render lines for both layers, resulting in unpleasant results. 
 
+## Performance Tips
+
+In the beta version, StrokeGen follows a conservative strategy: 
+</br><span style="color:red">**Each StrokeGen-enabled object should under two million triangles. 
+</br>This will change as the development continues.** </span> 
+
+!!! note large "Notes from the developer" 
+    StrokeGen consists of intricate and complex GPU algorithms, making it much harder to maintain than normal code.
+    
+    I only have limited time & energy for it - I developed it alone during my free time, and I need to work to feed myself :smiling_face_with_tear: . 
+    
+    Considering the variety of users' GPUs, I decide to be conservative first. If you think this tool has potential, please provide your feedback on Discord, so that I can gradually improve it & optimize for different hardwares. 
 
