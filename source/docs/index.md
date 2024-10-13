@@ -89,6 +89,6 @@ The current version of StrokeGen is a beta release,
 
 === "AI shading / colorization"
     
-    Implement a neural network for cel shading and colorization. 
+    Implement a diffusion model for interactive cel shading and colorization. 
     </br>This feature is still in the research phase, 
     </br>and I am looking for collaborators to help me with this.
