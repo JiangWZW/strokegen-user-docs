@@ -1,6 +1,10 @@
 ![Image title](img/StrokeGen.svg){ align=left }
 The goal of StrokeGen is to empower 3D artists with a powerful tool for creating high-quality line art. 
-</br>It is developed as a customized Blender build by Wangziwei Jiang.
+</br>It is developed as a customized Blender build(1) by Wangziwei Jiang(2). 
+{ .annotate } 
+
+1. Why not a plugin? Because the core algorithm requires deep integration with Blender's viewport and GPU modules, which is not possible with a python plugin. 
+2. Who is Wangziwei Jiang? A graphics programmer and 3D artist who is passionate about NPR and has been working on this project for years.
 
 <div class="grid cards" markdown size="50%">
 
@@ -47,16 +51,18 @@ The goal of StrokeGen is to empower 3D artists with a powerful tool for creating
 
 <div class="grid cards" markdown>
 
--   :material-format-font:{ .lg .middle } __Driven by Community__
+-   :material-account-group:{ .lg .middle } __Driven by Community__
 
     ---
     Strokegen is still in development, and your feedback is essential to its success.
-    Join the [Discord](https://discord.gg/9Q45afM2Es) community to share your thoughts and ideas.
+    
+    :octicons-arrow-right-24: Join the [Discord](https://discord.gg/9Q45afM2Es) community to share your thoughts and ideas.
 
 -   :material-scale-balance:{ .lg .middle } __Open Source__
 
     ---
     Strokegen is open-source software, and you can find the source code on [GitHub](https://projects.blender.org/WangZiWei-Jiang/fork-npr-strokegen.git)
+    </br>If you are interested in contributing to this project, joint the Discord community and let us know.
 
 </div>
 
@@ -65,5 +71,24 @@ The goal of StrokeGen is to empower 3D artists with a powerful tool for creating
 
 
 ## Roadmap
+The current version of StrokeGen is a beta release, 
+</br>the main goal is to improve the stability of the software and improve the user experience. 
+</br>However, there are some exciting features planned for the future: 
 
+=== "Temporal denoiser" 
 
+    Improve the flicker of stylized curves. 
+    </br>There is already a backbone for this feature, 
+    </br>but any further development requires the feedback from the community.
+
+=== "Intersection curves"
+
+    Generate intersection curves for two or more objects. 
+    </br>The goal is to implement a GPU-based algorithm for this feature and make it real-time.
+    </br>This feature is still in the research phase.
+
+=== "AI shading / colorization"
+    
+    Implement a neural network for cel shading and colorization. 
+    </br>This feature is still in the research phase, 
+    </br>and I am looking for collaborators to help me with this.

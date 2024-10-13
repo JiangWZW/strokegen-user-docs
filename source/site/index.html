@@ -405,9 +405,13 @@
 
   <h1>Home</h1>
 
-<p><a class="glightbox" href="img/StrokeGen.svg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="left" alt="Image title" src="img/StrokeGen.svg" /></a>
+<p class="annotate"><a class="glightbox" href="img/StrokeGen.svg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="left" alt="Image title" src="img/StrokeGen.svg" /></a>
 The goal of StrokeGen is to empower 3D artists with a powerful tool for creating high-quality line art. 
-</br>It is developed as a customized Blender build by Wangziwei Jiang.</p>
+</br>It is developed as a customized Blender build(1) by Wangziwei Jiang(2). </p>
+<ol>
+<li>Why not a plugin? Because the core algorithm requires deep integration with Blender's viewport and GPU modules, which is not possible with a python plugin. </li>
+<li>Who is Wangziwei Jiang? A graphics programmer and 3D artist who is passionate about NPR and has been working on this project for years.</li>
+</ol>
 <div class="grid cards" size="50%">
 <ul>
 <li>
@@ -451,19 +455,42 @@ The goal of StrokeGen is to empower 3D artists with a powerful tool for creating
 <div class="grid cards">
 <ul>
 <li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 8h3v12h1v1h-4v-1h1v-3h-4l-1.5 3H14v1h-4v-1h1zm1 1-3.5 7H18zM5 3h5c1.11 0 2 .89 2 2v11H9v-5H6v5H3V5c0-1.11.89-2 2-2m1 2v4h3V5z"/></svg></span> <strong>Driven by Community</strong></p>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.54 5.54 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13zM0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20zm24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9z"/></svg></span> <strong>Driven by Community</strong></p>
 <hr />
-<p>Strokegen is still in development, and your feedback is essential to its success.
-Join the <a href="https://discord.gg/9Q45afM2Es">Discord</a> community to share your thoughts and ideas.</p>
+<p>Strokegen is still in development, and your feedback is essential to its success.</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Join the <a href="https://discord.gg/9Q45afM2Es">Discord</a> community to share your thoughts and ideas.</p>
 </li>
 <li>
 <p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> <strong>Open Source</strong></p>
 <hr />
-<p>Strokegen is open-source software, and you can find the source code on <a href="https://projects.blender.org/WangZiWei-Jiang/fork-npr-strokegen.git">GitHub</a></p>
+<p>Strokegen is open-source software, and you can find the source code on <a href="https://projects.blender.org/WangZiWei-Jiang/fork-npr-strokegen.git">GitHub</a>
+</br>If you are interested in contributing to this project, joint the Discord community and let us know.</p>
 </li>
 </ul>
 </div>
 <h2 id="roadmap">Roadmap</h2>
+<p>The current version of StrokeGen is a beta release, 
+</br>the main goal is to improve the stability of the software and improve the user experience. 
+</br>However, there are some exciting features planned for the future: </p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Temporal denoiser</label><label for="__tabbed_1_2">Intersection curves</label><label for="__tabbed_1_3">AI shading / colorization</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Improve the flicker of stylized curves. 
+</br>There is already a backbone for this feature, 
+</br>but any further development requires the feedback from the community.</p>
+</div>
+<div class="tabbed-block">
+<p>Generate intersection curves for two or more objects. 
+</br>The goal is to implement a GPU-based algorithm for this feature and make it real-time.
+</br>This feature is still in the research phase.</p>
+</div>
+<div class="tabbed-block">
+<p>Implement a neural network for cel shading and colorization. 
+</br>This feature is still in the research phase, 
+</br>and I am looking for collaborators to help me with this.</p>
+</div>
+</div>
+</div>
 
 
 
