@@ -14,8 +14,9 @@ The goal of StrokeGen is to empower 3D artists with a powerful tool for creating
     [Quick Start](./Quick%20Start.md)
 </div>
 
+##Features
 
-<div class="grid cards" markdown>
+<div class="grid cards" style="margin-bottom: 0;" markdown>
 
 -   :material-brush: __Elegant curve topology__
     
@@ -46,15 +47,16 @@ The goal of StrokeGen is to empower 3D artists with a powerful tool for creating
 
 <div class="grid cards" markdown>
 
--   :material-format-font:{ .lg .middle } __Made to measure__
+-   :material-format-font:{ .lg .middle } __Driven by Community__
 
     ---
-    
+    Strokegen is still in development, and your feedback is essential to its success.
+    Join the [Discord](https://discord.gg/9Q45afM2Es) community to share your thoughts and ideas.
 
 -   :material-scale-balance:{ .lg .middle } __Open Source__
 
     ---
-
+    Strokegen is open-source software, and you can find the source code on [GitHub](https://projects.blender.org/WangZiWei-Jiang/fork-npr-strokegen.git)
 
 </div>
 
