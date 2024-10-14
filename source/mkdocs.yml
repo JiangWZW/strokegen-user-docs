@@ -72,5 +72,19 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
 
+extra:
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: Chinese
+#      link: /de/
+      link: /en/
+      lang: zh
+    - name: Japanese
+#      link: /de/
+      link: /en/
+      lang: ja
+
 copyright: |
   &copy; 2024 <a href="https://github.com/JiangWZW"  target="_blank" rel="noopener">Made with ❤️ by Wangziwei Jiang</a>
