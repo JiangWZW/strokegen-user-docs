@@ -2,7 +2,10 @@ site_name: StrokeGen 1.0 Documentation
 theme:
   name: material
   font:
-    text: Montserrat
+#    text: Montserrat
+    text: Vollkorn
+#    text: Frank Ruhl Libre
+#    text: Domine
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -23,11 +26,11 @@ theme:
 #      primary: teal
 #      accent: purple
     - scheme: slate
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
-      primary: teal
-      accent: lime
+#      toggle:
+#        icon: material/toggle-switch
+#        name: Switch to light mode
+      primary: custom
+      accent: custom
 
 plugins:
   - social:
@@ -71,6 +74,9 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
 
 extra:
   alternate:

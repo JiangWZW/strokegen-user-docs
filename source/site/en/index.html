@@ -39,8 +39,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vollkorn:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Vollkorn";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -98,7 +98,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -156,11 +156,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
-    
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
-      </label>
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
     
   
 </form>
@@ -460,9 +456,9 @@
   <h1>Index</h1>
 
 <p class="annotate"><a class="glightbox" href="../img/StrokeGen.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="left" alt="Image title" src="../img/StrokeGen.png" /></a>
-</br>StrokeGen: a customized Blender build(1) developed by Wangziwei Jiang(2). </p>
+</br>StrokeGen is a customized Blender build(1) developed by Wangziwei Jiang(2). </p>
 <ol>
-<li>Why not a plugin? Because the core algorithm requires deep integration with Blender's viewport and GPU modules, which is not possible with a python plugin. </li>
+<li>Why not a plugin? Because the algorithm requires deep integration inside Blender, which is not possible with a python plugin. </li>
 <li>Who is Wangziwei Jiang? <img alt="" class="off-glb image-left" src="../img/avatar.png" /> A graphics programmer and 3D artist who is passionate about NPR and has been working on this project for years.</li>
 </ol>
 <div class="grid cards" size="50%">
@@ -609,6 +605,8 @@
     
     
       <script src="../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+        <script src="../javascripts/extra.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

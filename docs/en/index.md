@@ -1,8 +1,9 @@
+
 ![Image title](../img/StrokeGen.png){ align=left }
-</br>StrokeGen: a customized Blender build(1) developed by Wangziwei Jiang(2). 
+</br>StrokeGen is a customized Blender build(1) developed by Wangziwei Jiang(2). 
 { .annotate } 
 
-1. Why not a plugin? Because the core algorithm requires deep integration with Blender's viewport and GPU modules, which is not possible with a python plugin. 
+1. Why not a plugin? Because the algorithm requires deep integration inside Blender, which is not possible with a python plugin. 
 2. Who is Wangziwei Jiang? ![](../img/avatar.png){: .off-glb .image-left } A graphics programmer and 3D artist who is passionate about NPR and has been working on this project for years.
 
 

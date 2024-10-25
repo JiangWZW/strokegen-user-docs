@@ -20,8 +20,10 @@ Like any other rendering algorithm, the performance of StrokeGen depends on the 
 ## Performance Tips
 
 In the beta version, StrokeGen follows a conservative strategy: 
-</br><span style="color:red">**Each StrokeGen-enabled object should under two million triangles. 
-</br>This will change as the development continues.** </span> 
+</br><span style="color:#c35340">Each StrokeGen-enabled object should under two million triangles.(1)
+{ .annotate } 
+
+1. This will change as the development continues. </span> 
 
 !!! note large "Notes from the developer" 
     StrokeGen consists of intricate and complex GPU algorithms, making it much harder to maintain than normal code.
