@@ -1,6 +1,5 @@
-![Image title](../img/StrokeGen.svg){ align=left }
-The goal of StrokeGen is to empower 3D artists with a powerful tool for creating high-quality line art. 
-</br>It is developed as a customized Blender build(1) by Wangziwei Jiang(2). 
+![Image title](../img/StrokeGen.png){ align=left }
+</br>StrokeGen: a customized Blender build(1) developed by Wangziwei Jiang(2). 
 { .annotate } 
 
 1. Why not a plugin? Because the core algorithm requires deep integration with Blender's viewport and GPU modules, which is not possible with a python plugin. 
