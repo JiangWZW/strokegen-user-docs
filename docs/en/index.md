@@ -1,5 +1,5 @@
 
-![Image title](../img/StrokeGen.png){ align=left }
+![Image title](../img/StrokeGen.png){ align=left style="height:370px;width:535px" }
 </br>StrokeGen is a customized Blender build(1) developed by Wangziwei Jiang(2). 
 { .annotate } 
 
