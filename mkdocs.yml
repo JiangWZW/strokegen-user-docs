@@ -2,8 +2,8 @@ site_name: StrokeGen 1.0 Documentation
 theme:
   name: material
   font:
-#    text: Montserrat
-    text: Vollkorn
+    text: Montserrat
+#    text: Vollkorn
 #    text: Frank Ruhl Libre
 #    text: Domine
   features:

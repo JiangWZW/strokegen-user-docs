@@ -66,7 +66,8 @@
 
     ---
     Strokegen is open-source software, and you can find the source code on [GitHub](https://projects.blender.org/WangZiWei-Jiang/fork-npr-strokegen.git)
-    </br>If you are interested in contributing to this project, joint the Discord community and let us know.
+    
+    In the future, if the feedbacks were good, we plan to merge the code into official Blender.
 
 </div>
 
@@ -76,7 +77,7 @@
 
 ## Roadmap
 StrokeGen is in the beta stage, and the current goal is to improve the stability and user experience.
-</br>However, there are some exciting features planned for the future: 
+</br>However, there are some exciting features planned for the future:
 
 === "Temporal denoiser" 
 
@@ -84,14 +85,22 @@ StrokeGen is in the beta stage, and the current goal is to improve the stability
     </br>There is already a backbone for this feature, 
     </br>but any further development requires the feedback from the community.
 
-=== "Intersection curves"
+=== "More curve types"
 
-    Generate intersection curves for two or more objects. 
+    Generate intersection/crease/shadow/highlight curves from the 3d surface. 
     </br>The goal is to implement a GPU-based algorithm for this feature and make it real-time.
     </br>This feature is still in the research phase.
+
+=== "Grease Pencil"
+    
+    Support seamless conversion between strokegen curves and Grease Pencil strokes.
+    </br>If possible, our temporal denoiser can be used to track Grease Pencil drawings. 
 
 === "AI shading / colorization"
     
     Implement a diffusion model for interactive cel shading and colorization. 
     </br>This feature is still in the research phase, 
     </br>and I am looking for collaborators to help me with this.
+
+The development of StrokeGen depends on the feedback from the artist community, 
+</br>please join the [Discord server](https://discord.gg/9Q45afM2Es) and share your thoughts and ideas!
