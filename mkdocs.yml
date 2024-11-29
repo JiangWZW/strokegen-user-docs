@@ -17,6 +17,7 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - content.tooltips
   language: en
   palette:
 #    - scheme: default
@@ -51,6 +52,9 @@ plugins:
        background: white
        shadow: true
        manual: false
+  - search
+  - awesome-pages # https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin
+
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -71,6 +75,15 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - abbr
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
 
 extra_css:
   - stylesheets/extra.css
@@ -91,6 +104,8 @@ extra:
 #      link: /de/
       link: /en/
       lang: ja
+
+
 
 copyright: |
   &copy; 2024 <a href="https://github.com/JiangWZW"  target="_blank" rel="noopener">Made with ❤️ by Wangziwei Jiang</a>

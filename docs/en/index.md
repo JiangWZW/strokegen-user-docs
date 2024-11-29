@@ -4,7 +4,7 @@
 { .annotate } 
 
 1. Why not a plugin? Because the algorithm requires deep integration inside Blender, which is not possible with a python plugin. 
-2. Who is Wangziwei Jiang? ![](../img/avatar.png){: .off-glb .image-left } A graphics programmer and 3D artist who is passionate about NPR and has been working on this project for years.
+2. Who is Wangziwei Jiang? ![](../img/avatar_1.png){: .off-glb .image-left } A graphics programmer and 3D artist who is passionate about NPR and has been working on this project for years.
 
 
 
@@ -19,7 +19,7 @@
 -   :material-book-open-outline: __Tutorials__
 
     :octicons-arrow-right-24: [Quick Start](./Quick%20Start.md)
-    </br>:octicons-arrow-right-24: [Best Practice](./User%20Guide.md)
+    </br>:octicons-arrow-right-24: [Best Practice](./Best%20Practices.md)
 </div>
 
 ##Features
@@ -79,9 +79,9 @@
 StrokeGen is in the beta stage, and the current goal is to improve the stability and user experience.
 </br>However, there are some exciting features planned for the future:
 
-=== "Temporal denoiser" 
+=== "Temporal stablizer" 
 
-    Improve the flicker of stylized curves. 
+    Improve the flicker of stylized curves to make StrokeGen feasible for animations.
     </br>There is already a backbone for this feature, 
     </br>but any further development requires the feedback from the community.
 
