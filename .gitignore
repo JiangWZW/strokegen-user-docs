@@ -158,8 +158,8 @@ cython_debug/
 *.psd
 *.ai
 
-# video assets
-*.mp4
+
+
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
