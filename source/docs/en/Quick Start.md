@@ -11,7 +11,7 @@ Here is a quick guide to get you started.
 The following [youtube video](https://youtu.be/souFylcb5U4) demonstrates how to set up StrokeGen for a simple curve rendering.
 
 <video width="400" controls>
-<source src="../../vids/Simple_Curve_Tutorial.mp4" type="video/mp4">
+<source src="https://github.com/JiangWZW/strokegen-user-docs/blob/main/docs/vids/Simple_Curve_Tutorial.mp4?raw=true" type="video/mp4">
 </video>
 
 
@@ -26,13 +26,13 @@ Otherwise, [Best Practice](./Best%20Practices.md) will guide you through the pro
 #### Stamping Brushes
 Watch this [youtube video](https://youtu.be/souFylcb5U4) to apply Photoshop-style painting brushes to the curves.
 <video width="400" controls>
-<source src="../../vids/Stamping_Curve_Tutorial.mp4" type="video/mp4">
+<source src="https://github.com/JiangWZW/strokegen-user-docs/blob/main/docs/vids/Stamping_Curve_Tutorial.mp4?raw=true" type="video/mp4">
 </video>
 
 #### Vectorized Curves 
 Watch this [youtube video](https://youtu.be/vpgIZa74ft4) to learn the basics of using Adobe-Illustrator-style vectorized curves. 
 <video width="400" controls>
-<source src="../../vids/Vertor_Curve_Tutorial.mp4" type="video/mp4">
+<source src="https://github.com/JiangWZW/strokegen-user-docs/blob/main/docs/vids/Vertor_Curve_Tutorial.mp4?raw=true" type="video/mp4">
 </video>
 
 
