@@ -51,7 +51,7 @@ This part of patrameters control the generation of 3D curves from the mesh surfa
 
     ![Contour curve network](../img/Contour%20Curves.png){width="315" align=left data-title="Curve network" data-description="3D contour curves extracted from the mesh surface." data-caption-position="top"}
     ![Contour curve](../img/Visible%20Contour%20Curves.png){width="317" align=left data-title="Visible curves" data-description="Visible portion of the 3D curves." data-caption-position="top"}
-    ![Contour curve on surface](../img/Contour%20Animation.gif){width="335" align=left data-title="Observe extracted contours on the surface" data-description="Contour curves change with the motion of camera and object." data-caption-position="top"}
+    ![Contour curve on surface](https://github.com/JiangWZW/strokegen-user-docs/blob/main/docs/img/Contour%20Animation.gif){width="335" align=left data-title="Observe extracted contours on the surface" data-description="Contour curves change with the motion of camera and object." data-caption-position="top"}
     
     !!! note "More Curve Types"
         If StrokeGen got enough momentum  for further development (which I really doubt...), 
