@@ -24,13 +24,12 @@ This controls the overall behavior of StrokeGen.
 
     1. For example, vertex density, hard/soft surfaces 
 
-    Per-Object Setting includes two parts:
-    !!! note "Curve-related Parameters" 
-        This controls the generation of 3D curves from the mesh surface.
-    !!! note "Mesh-related Parameters"
-        This controls the GPU processing of the mesh surface for better curve generation.
+    Per-Object Setting includes two parts: 
+    </br>**Curve** and **Mesh**-related parameters. 
+
 
 ### Curve-related Parameters
+This part of patrameters control the generation of 3D curves from the mesh surface.
 
 === "Curve Types"
     Currently StrokeGen supports only one type of curve: **Contour**. 
@@ -84,6 +83,7 @@ This controls the overall behavior of StrokeGen.
     
 
 ### Mesh-related Parameters
+This controls the GPU processing of the mesh surface for better curve generation.
 
 === "Tessellation"
     StrokeGen adaptively tessellates the surface to refine the 3D curves.
