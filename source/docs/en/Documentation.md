@@ -104,7 +104,7 @@ This part of patrameters control the generation of 3D curves from the mesh surfa
     The visibility threshold is the depth offset between the 3D curve and the mesh surface. 
     </br>Usually a value from 0.1 - 0.3 is sufficient.
 
-    ![Visibility Threshold](../img/visibility%20threshold.gif){width="700" align=left data-title="Curve network" data-description="3D contour curves extracted from the mesh surface." data-caption-position="top"}
+    ![Visibility Threshold](https://github.com/JiangWZW/strokegen-user-docs/blob/main/docs/img/visibility%20threshold.gif){width="700" align=left data-title="Curve network" data-description="3D contour curves extracted from the mesh surface." data-caption-position="top"}
     
 
 ### Mesh-related Parameters
@@ -115,7 +115,7 @@ This controls the GPU processing of the mesh surface for better curve generation
     </br> This is required when your base mesh is too coarse to generate smooth curves. 
 
 
-    ![Surface Tessellation](../img/surface%20tessellation.gif){width="275" align=left data-title="Adaptive Tessellation"  data-description="The tessellation is dynamic according to the movement of camera/object." data-caption-position="top"}
+    ![Surface Tessellation](https://github.com/JiangWZW/strokegen-user-docs/blob/main/docs/img/surface%20tessellation.gif){width="275" align=left data-title="Adaptive Tessellation"  data-description="The tessellation is dynamic according to the movement of camera/object." data-caption-position="top"}
     
     === "Tessellation Level"
         Higher tessellation level results in better curves but may slow down the performance.
@@ -174,7 +174,7 @@ This controls the GPU processing of the mesh surface for better curve generation
             ![](../img/BrushTex_Vector_Stroke_Tex_1.png){width="400" }
     
     === "Jittering for Stamped Brushes" 
-        ![](../img/Brush_Jitter.gif){width="200" align=left}
+        ![](https://github.com/JiangWZW/strokegen-user-docs/blob/main/docs/Brush_Jitter.gif){width="200" align=left}
 
         If you've ever made custom brushes in Photoshop, you know what jittering is.
         </br>It adds randomness to the brush footprint, making the curve more natural.

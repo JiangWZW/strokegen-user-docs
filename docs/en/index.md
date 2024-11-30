@@ -20,6 +20,7 @@
 
     :octicons-arrow-right-24: [Quick Start](./Quick%20Start.md)
     </br>:octicons-arrow-right-24: [Best Practice](./Best%20Practices.md)
+    </br>:octicons-arrow-right-24: [Documentation](./Documentation.md)
 </div>
 
 ##Features
