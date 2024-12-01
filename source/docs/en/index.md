@@ -53,7 +53,7 @@
 </img-comparison-slider>
 
 <video controls>
-<source src="https://github.com/JiangWZW/strokegen-user-docs/blob/main/docs/vids/Showcase.mp4?raw=true" type="video/mp4">
+<source src="https://github.com/JiangWZW/strokegen-user-docs/blob/main/docs/vids/Showcase_LowRes.mp4?raw=true" type="video/mp4">
 </video>
 
 (Models from [ucupumar](https://www.patreon.com/c/ucupumar/posts))
