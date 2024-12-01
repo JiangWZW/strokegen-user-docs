@@ -1,0 +1,69 @@
+.md-typeset .admonition,
+.md-typeset details.large {
+  font-size: 17px
+}
+
+@media (max-width: 1024px) {
+  .md-button--stretch {
+    width: 100%;
+    line-height: 50%;
+  }
+}
+
+
+.image-left {
+  display: block;
+  margin-right: 7px;
+  margin-top: 7px;
+  float: left;
+  width: 10%;
+}
+
+
+@font-face {
+  font-family: "JTCM9";
+  src: url("../fonts/NIS-JTC-Win-M9.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "FOT-MatissePro-M";
+  src: url("../fonts/FOT-MatissePro/FOT-MatissePro-M.otf") format('opentype');
+}
+
+p {
+  font-size: 1.0em;
+  font-weight: 500;
+}
+div {
+  line-height: 150%;
+}
+
+[data-md-color-scheme="slate"]  {
+  --md-primary-fg-color: #a2b2df;
+  --md-primary-bg-color: #191919;
+
+  --md-accent-fg-color: #191919;
+  --md-accent-bg-color: #191919;
+
+  --md-default-fg-color: white;
+  --md-default-bg-color: #191919;
+  --md-typeset-color: white;
+}
+
+.video-wrapper {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+}
+.video-wrapper > iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

@@ -1,0 +1,912 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Best%20Practices/">
+      
+      
+        <link rel="next" href="../Known%20Issues/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.47">
+    
+    
+      
+        <title>Documentation - StrokeGen 1.0 Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Documentation - StrokeGen 1.0 Documentation" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="./assets/images/social/en/Documentation.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="None" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Documentation - StrokeGen 1.0 Documentation" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="./assets/images/social/en/Documentation.png" >
+      
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#global-setting" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="StrokeGen 1.0 Documentation" class="md-header__button md-logo" aria-label="StrokeGen 1.0 Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            StrokeGen 1.0 Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Documentation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/en/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/en/" hreflang="zh" class="md-select__link">
+              Chinese
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/en/" hreflang="ja" class="md-select__link">
+              Japanese
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  En
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="StrokeGen 1.0 Documentation" class="md-nav__button md-logo" aria-label="StrokeGen 1.0 Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    StrokeGen 1.0 Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    En
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            En
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Quick%20Start/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick Start
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Best%20Practices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Best Practices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Documentation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Documentation
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#global-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Global Setting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#per-object-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Per-Object Setting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Per-Object Setting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#curve-related-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Curve-related Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mesh-related-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mesh-related Parameters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#per-material-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Per-Material Setting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Per-Material Setting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Known%20Issues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Known Issues
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Roadmap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roadmap
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Afterword/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Afterword
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Documentation</h1>
+
+<p>In this page, we introduce the settings in detail to help you fully utilize StrokeGen.</p>
+<h2 id="global-setting">Global Setting</h2>
+<p>This controls the overall behavior of StrokeGen. </p>
+<figure>
+    <a class="glightbox" href="../../img/Global%20Settings%20Panels.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="left" alt="Image Title" src="../../img/Global%20Settings%20Panels.png" width="700" /></a>
+    <figcaption>Settings to generating the 3D curves.</figcaption>
+</figure>
+<p>The names are self-explanatory, but here are some details:</p>
+<div class="admonition note large">
+<p class="admonition-title">Blending Mode</p>
+<p>The blending mode for applying the curve color to the screen. 
+</br>For advanced stylization, you should set it to <strong>Alpha Blend</strong>. </p>
+</div>
+<div class="admonition note large">
+<p class="admonition-title">Paper Mode</p>
+<p>Set this to one to only render the curves on the screen.
+</br> This is useful when you want to observe the curves only, without the mesh surface. </p>
+</div>
+<h2 id="per-object-setting">Per-Object Setting</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"> </label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><a class="glightbox" href="../../img/Per-object%20panels.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="left" alt="Image Title" src="../../img/Per-object%20panels.png" width="300" /></a></p>
+<p>StrokeGen generates 3D curves from mesh surface, 
+</br>then resamples them into 2D curves.</p>
+<p class="annotate">Objects with different geometry characteristics(1) 
+</br>may require different settings.</p>
+<ol>
+<li>For example, vertex density, hard/soft surfaces </li>
+</ol>
+<p>Per-Object Setting includes two parts: 
+</br><strong>Curve</strong> and <strong>Mesh</strong>-related parameters. </p>
+</div>
+</div>
+</div>
+<h3 id="curve-related-parameters">Curve-related Parameters</h3>
+<p>This part of patrameters control the generation of 3D curves from the mesh surface.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Curve Types</label><label for="__tabbed_2_2">Curve Segmentation</label><label for="__tabbed_2_3">Visibility Threshold</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Currently StrokeGen supports only one type of curve: <strong>Contour</strong>. </p>
+<p>Contour is a curve that follows the silhouette of the mesh. 
+</br>In other words, it separates the front-facing and back-facing parts of the mesh. </p>
+<p>Click image to view details and captions</p>
+<p><a class="glightbox" href="../../img/Contour%20Curves.png" data-type="image" data-width="100%" data-height="auto" data-title="Curve network" data-description="3D contour curves extracted from the mesh surface." data-desc-position="top"><img align="left" alt="Contour curve network" data-caption-position="top" data-description="3D contour curves extracted from the mesh surface." data-title="Curve network" src="../../img/Contour%20Curves.png" width="315" /></a>
+<a class="glightbox" href="../../img/Visible%20Contour%20Curves.png" data-type="image" data-width="100%" data-height="auto" data-title="Visible curves" data-description="Visible portion of the 3D curves." data-desc-position="top"><img align="left" alt="Contour curve" data-caption-position="top" data-description="Visible portion of the 3D curves." data-title="Visible curves" src="../../img/Visible%20Contour%20Curves.png" width="317" /></a>
+<a class="glightbox" href="https://github.com/JiangWZW/strokegen-user-docs/blob/main/docs/img/Contour%20Animation.gif?raw=true" data-type="image" data-width="100%" data-height="auto" data-title="Observe extracted contours on the surface" data-description="Contour curves change with the motion of camera and object." data-desc-position="top"><img align="left" alt="Contour curve on surface" data-caption-position="top" data-description="Contour curves change with the motion of camera and object." data-title="Observe extracted contours on the surface" src="https://github.com/JiangWZW/strokegen-user-docs/blob/main/docs/img/Contour%20Animation.gif?raw=true" width="335" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">More Curve Types</p>
+<p>If StrokeGen got enough momentum  for further development (which I really doubt...), 
+</br><strong>Boundary</strong>, <strong>Intersection</strong>, <strong>Crease</strong> types will be added.</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Smoothed Contour</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>This option smooths the contour curves by locally optimizing the surface around the contour.
+</br>It is useful when the contour curves are too jagged.</p>
+<div class="admonition danger">
+<p class="admonition-title">Your mesh should have enough vertex density to support the smoothing operation.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Determines segmentation upon the 3D feature curves.
+</br>Each segment will be regarded as an individual curve.
+</br><strong>This will affect the final 2D curve network, hence the stylization, such as tapering, texturing, etc.</strong> </p>
+<p>The segmentation schemes may differ according to the curve type. 
+</br>For contour curves, StrokeGen supports two types of segmentation: <strong>cusp</strong> and <strong>corner</strong>.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Cusp</label><label for="__tabbed_4_2">2D Corner</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Cusp is where the curve self-occludes, and the tangent direction changes abruptly. </p>
+<p>For example, the two points marked with "3" in the image below are cusps.
+<figure markdown="span">
+    <a class="glightbox" href="../../img/Cusp.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="left" alt="" src="../../img/Cusp.png" width="400" /></a>
+</figure></p>
+<p>Here are two images comparing results without any segmentation and with cusp enabled.</p>
+<p><a class="glightbox" href="../../img/Segmentation_Off.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../img/Segmentation_Off.png" width="400" /></a>
+<a class="glightbox" href="../../img/Segmentation_Cusp.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../img/Segmentation_Cusp.png" width="400" /></a></p>
+</div>
+<div class="tabbed-block">
+<p>Sharp corners in the 2D space. </p>
+<p>When this is enabled, the curves will be split at those sharp corners.</p>
+<p><strong>Corner Angle</strong> controls the angular threshold of the corner detection.</p>
+<p>Without any segmentation vs. with both cusp and corner enabled with a corner angle of 60 degrees.
+<a class="glightbox" href="../../img/Segmentation_Off.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../img/Segmentation_Off.png" width="400" /></a>
+<a class="glightbox" href="../../img/Segmentation_Cusp_Corner.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../img/Segmentation_Cusp_Corner.png" width="400" /></a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>This parameter controls the visibility of the 3D curves. 
+</br>It is useful when you want to show some hidden curves that are very close to its occluder surface.</p>
+<p>The visibility threshold is the depth offset between the 3D curve and the mesh surface. 
+</br>Usually a value from 0.1 - 0.3 is sufficient.</p>
+<p><a class="glightbox" href="https://github.com/JiangWZW/strokegen-user-docs/blob/main/docs/img/visibility%20threshold.gif?raw=true" data-type="image" data-width="100%" data-height="auto" data-title="Curve network" data-description="3D contour curves extracted from the mesh surface." data-desc-position="top"><img align="left" alt="Visibility Threshold" data-caption-position="top" data-description="3D contour curves extracted from the mesh surface." data-title="Curve network" src="https://github.com/JiangWZW/strokegen-user-docs/blob/main/docs/img/visibility%20threshold.gif?raw=true" width="700" /></a></p>
+</div>
+</div>
+</div>
+<h3 id="mesh-related-parameters">Mesh-related Parameters</h3>
+<p>This controls the GPU processing of the mesh surface for better curve generation.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Tessellation</label><label for="__tabbed_5_2">Surface Shading Type</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>StrokeGen adaptively tessellates the surface to refine the 3D curves.
+</br> This is required when your base mesh is too coarse to generate smooth curves. </p>
+<p><a class="glightbox" href="https://github.com/JiangWZW/strokegen-user-docs/blob/main/docs/img/surface%20tessellation.gif?raw=true" data-type="image" data-width="100%" data-height="auto" data-title="Adaptive Tessellation" data-description="The tessellation is dynamic according to the movement of camera/object." data-desc-position="top"><img align="left" alt="Surface Tessellation" data-caption-position="top" data-description="The tessellation is dynamic according to the movement of camera/object." data-title="Adaptive Tessellation" src="https://github.com/JiangWZW/strokegen-user-docs/blob/main/docs/img/surface%20tessellation.gif?raw=true" width="275" /></a></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Tessellation Level</label><label for="__tabbed_6_2">Enable Crease</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Higher tessellation level results in better curves but may slow down the performance.</p>
+<div class="admonition danger">
+<p class="admonition-title">If you mesh already had a subdiv modifier with 2 or higher levels, </br>you should leave this value to 0.</p>
+</div>
+<p>Usually, a value of <strong>1</strong> is sufficient for most cases. </p>
+<p>If the curves are still not smooth enough, you can increase this value to <strong>2</strong>.</p>
+</div>
+<div class="tabbed-block">
+<p>This option enables the crease detection algorithm, which helps to generate better curves on sharp edges.
+</br>It is useful when your mesh has sharp edges that are not well supported by the vertex normals.</p>
+<div class="admonition warning">
+<p class="admonition-title">Better to keep this off and rely on your topology. </br>It may generate unwanted curves on the mesh.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Sometimes we have to handle transparency or other special shading types.
+For now StrokeGen supports only <strong>Opaque</strong> and <strong>Transparent</strong> shading types.</p>
+<p>Usually your strokegen object should be set to <strong>Opaque</strong>.
+</br>Objects with <strong>Transparent</strong> shading type <strong>will not occlude any curves</strong>. </p>
+</div>
+</div>
+</div>
+<h2 id="per-material-setting">Per-Material Setting</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:1"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1"> </label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><a class="glightbox" href="../../img/Per-material%20panels.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="left" alt="Image Title" src="../../img/Per-material%20panels.png" width="500" /></a></p>
+<p>This controls how the 2D curves were drawn, including the line width, color, and other visual effects.</p>
+<div class="admonition danger large">
+<p class="admonition-title">Use an extra material solely for StrokeGen renderer and nothing else.</p>
+</div>
+<p>There are two ways to render a 2D curve: <strong>Stamp</strong> and <strong>Vector</strong>.</p>
+<ul>
+<li><strong>Stamp</strong>: walk along the input trajectory and place stamps of a brush footprint. </li>
+<li><strong>Vector</strong>: generate a stroke mesh from the curve spline, then fill the stroke with color/texture.</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="parameters">Parameters</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:3"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><input id="__tabbed_8_3" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">Base Color</label><label for="__tabbed_8_2">Curve Width</label><label for="__tabbed_8_3">Textured Curve</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>The color of the 2D curve.</p>
+<div class="admonition danger large">
+<p class="admonition-title">Always remember to initialize the alpha to 1.</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The width of the 2D curve. </p>
+</div>
+<div class="tabbed-block">
+<p>This option enables the texture mapping on the 2D curve.
+</br> Once enabled, different options will be available for stamping and vector styles.  </p>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:3"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><input id="__tabbed_9_3" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">Brush Texture &amp; Tiling</label><label for="__tabbed_9_2">Jittering for Stamped Brushes</label><label for="__tabbed_9_3">Paper Texture &amp; Tiling</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>The texture used for stamping brushes on the curve, or texturing the strokes.</p>
+<div class="admonition note large">
+<p class="admonition-title">Note that the empty portion of the texture should have an alpha of 0.</p>
+</div>
+<p><strong>Brush Tiling</strong>: The tiling of the brush texture.</p>
+<ul>
+<li>For <strong>Stamping</strong> style, it is the tiling of the brush footprint.
+  </br>Usually you should set this value to 1. 
+    </br><a class="glightbox" href="../../img/BrushTex_Brush_Texture.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../img/BrushTex_Brush_Texture.png" width="100" /></a></li>
+<li>For <strong>Vector</strong> style, it is the tiling of the texture on the stroke. 
+    </br>An image of aspect ratio 4 : 1, with 4 elements, should have a tiling of 4. 
+    </br><a class="glightbox" href="../../img/BrushTex_Vector_Stroke_Tex_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../img/BrushTex_Vector_Stroke_Tex_1.png" width="200" /></a></br>
+    </br>An image of aspect ratio 8 : 1, should have a tiling of 8.
+    </br><a class="glightbox" href="../../img/BrushTex_Vector_Stroke_Tex_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../img/BrushTex_Vector_Stroke_Tex_2.png" width="400" /></a></br></li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="https://github.com/JiangWZW/strokegen-user-docs/blob/main/docs/img/Brush_Jitter.gif?raw=true" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="left" alt="" src="https://github.com/JiangWZW/strokegen-user-docs/blob/main/docs/img/Brush_Jitter.gif?raw=true" width="200" /></a></p>
+<p>If you've ever made custom brushes in Photoshop, you know what jittering is.
+</br>It adds randomness to the brush footprint, making the curve more natural.</p>
+<p>StrokeGen supports jittering for stamped brushes.
+</br>You can jitter the brush footprint in many ways: <strong>Scale</strong>, <strong>Position</strong>, <strong>Rotation</strong>, etc.         </p>
+</div>
+<div class="tabbed-block">
+<p></br><a class="glightbox" href="../../img/BrushTex_Paper_Texture.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="left" alt="" src="../../img/BrushTex_Paper_Texture.png" width="300" /></a>
+The texture to simulate the micro height variations on the paper surface. Stamped Brush only.</p>
+<p>For example, the left paper texture is a fractal noise generated in Substance Designer.</p>
+<p><strong>Paper Tiling</strong>: The tiling of the paper texture.
+</br>Usually you should set this value to 1. 
+</br>However, you can increase it if your texture does not have enough high-frequency details.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 <a href="https://github.com/JiangWZW"  target="_blank" rel="noopener">Made with ❤️ by Wangziwei Jiang</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.tooltips"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
