@@ -170,8 +170,10 @@ This controls the GPU processing of the mesh surface for better curve generation
           </br>Usually you should set this value to 1. 
             </br>![](../img/BrushTex_Brush_Texture.png){width="100" }
         - For **Vector** style, it is the tiling of the texture on the stroke. 
-          </br>An image of aspect ratio 4 : 1, with 4 elements, should have a tiling of 4. 
-            ![](../img/BrushTex_Vector_Stroke_Tex_1.png){width="400" }
+            </br>An image of aspect ratio 4 : 1, with 4 elements, should have a tiling of 4. 
+            </br>![](../img/BrushTex_Vector_Stroke_Tex_1.png){width="200" }</br>
+            </br>An image of aspect ratio 8 : 1, should have a tiling of 8.
+            </br>![](../img/BrushTex_Vector_Stroke_Tex_2.png){width="400" }</br>
     
     === "Jittering for Stamped Brushes" 
         ![](https://github.com/JiangWZW/strokegen-user-docs/blob/main/docs/img/Brush_Jitter.gif?raw=true){width="200" align=left}
@@ -182,3 +184,13 @@ This controls the GPU processing of the mesh surface for better curve generation
         StrokeGen supports jittering for stamped brushes.
         </br>You can jitter the brush footprint in many ways: **Scale**, **Position**, **Rotation**, etc.         
     
+    === "Paper Texture & Tiling" 
+        </br>![](../img/BrushTex_Paper_Texture.png){width="300" align=left }
+        The texture to simulate the micro height variations on the paper surface. Stamped Brush only.
+        
+        For example, the left paper texture is a fractal noise generated in Substance Designer.
+        
+        **Paper Tiling**: The tiling of the paper texture.
+        </br>Usually you should set this value to 1. 
+        </br>However, you can increase it if your texture does not have enough high-frequency details.
+        
