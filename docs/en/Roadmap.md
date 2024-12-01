@@ -11,11 +11,11 @@ Hopefully StrokeGen gets enough attention & success that I have the momentum and
     **Curve tracking** is required to make StrokeGen feasible for animations.
     
     StrokeGen already has a tracking framework that walks on the surface.
-    <video controls>
-    <source src="https://x.com/i/status/1814671589574639763" type="video/mp4">
-    </video>
+    </br><video width="500" controls>
+    <source src="https://github.com/JiangWZW/strokegen-user-docs/blob/main/docs/vids/Curve%20Tracking.mp4?raw=true" type="video/mp4">
+    </video></br>
 
-    </br>Now I just have to be more specific:
+    Now I just have to be more specific:
     
     1.  **Reduce flickers in curve tapering** **(2-3 months)** 
     1.  **Improve curve visibility** **(1 month)** 
