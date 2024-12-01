@@ -8,7 +8,7 @@ I'm passionate about stylized rendering, but frustrated with its lacking of tech
 </br>In my free time, I also like to create some 3D art. I even worked as a outsourced artist for a while. 
 
 **All these traits have led me to create StrokeGen.** 
-</br>It's a tool that expands the visions for artists, not a half-wit AI model trying to replace you. 
+</br>**It's a tool that expands the visions for artists, not a half-wit AI model that steals from you and try to replace you.** 
 
 Since my college days, I've been researching on real-time line art rendering, and **it has been 6 years till now**. 
 </br>It was really a long journey, and I think this is the right time to share my work with the community.
