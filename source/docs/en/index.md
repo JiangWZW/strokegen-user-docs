@@ -51,6 +51,11 @@
 ![](../img/0.png){: .off-glb slot="first" }
 ![](../img/1.png){: .off-glb slot="second" }
 </img-comparison-slider>
+
+<video controls>
+<source src="https://github.com/JiangWZW/strokegen-user-docs/blob/main/docs/vids/Showcase.mp4?raw=true" type="video/mp4">
+</video>
+
 (Models from [ucupumar](https://www.patreon.com/c/ucupumar/posts))
 
 
