@@ -117,7 +117,7 @@ This controls the GPU processing of the mesh surface for better curve generation
 
     ![Surface Tessellation](https://github.com/JiangWZW/strokegen-user-docs/blob/main/docs/img/surface%20tessellation.gif?raw=true){width="275" align=left data-title="Adaptive Tessellation"  data-description="The tessellation is dynamic according to the movement of camera/object." data-caption-position="top"}
     
-    === "Tessellation Level"
+    === "Tessellation Level" 
         Higher tessellation level results in better curves but may slow down the performance.
         !!! danger "If you mesh already had a subdiv modifier with 2 or higher levels, </br>you should leave this value to 0."
         

@@ -51,7 +51,7 @@
 ![](../img/0.png){: .off-glb slot="first" }
 ![](../img/1.png){: .off-glb slot="second" }
 </img-comparison-slider>
-
+(Models from [ucupumar](https://www.patreon.com/c/ucupumar/posts))
 
 
 <div class="grid cards" markdown>
