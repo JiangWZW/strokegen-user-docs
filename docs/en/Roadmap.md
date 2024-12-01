@@ -2,21 +2,25 @@
 StrokeGen is in the beta stage, and the current goal is to improve the stability and user experience.
 </br>In the future, if the feedbacks were good, we plan to merge the code into official Blender.
 
-Hopefully StrokeGen gets enough attention & success that I could get ppl to work on it.
-</br>If so, there are some exciting features planned for the future:
 
+
+Hopefully StrokeGen gets enough attention & success that I have the momentum and get ppl to work on it.
+</br>If so, there are two most important features that I'll be working on: 
 === "Animation Stabilizer" 
 
     **Curve tracking** is required to make StrokeGen feasible for animations.
     
     StrokeGen already has a tracking framework that walks on the surface.
+    <video controls>
+    <source src="https://x.com/i/status/1814671589574639763" type="video/mp4">
+    </video>
+
     </br>Now I just have to be more specific:
     
     1.  **Reduce flickers in curve tapering** **(2-3 months)** 
     1.  **Improve curve visibility** **(1 month)** 
     1.  **Stablize arc-length parameterization** (This may take forever) 
 
-    !!! note "I'm currently working on this feature" 
 
 === "More curve types"
 
@@ -30,6 +34,9 @@ Hopefully StrokeGen gets enough attention & success that I could get ppl to work
     
     !!! note "Have some parctical designs. Planned after the animation stabilizer."
 
+
+
+There are also some other features that I had in mind:
 === "Advanced Brush Simulation"
 
     Allowing more comlicated brush behaviors, such as: 
@@ -41,7 +48,7 @@ Hopefully StrokeGen gets enough attention & success that I could get ppl to work
     ![](../img/Advanced%20Brush%20Sim%201.png){width="500" }
     ![](../img/Advanced%20Brush%20Sim%202.png){width="500" }</br>
 
-    !!! note "This is simple. Just re-implement existing algorithms in Blender."
+    !!! note "Should be simple. Just re-implement existing algorithms in Blender."
 
 === "Grease Pencil and Geometry Node"
     
